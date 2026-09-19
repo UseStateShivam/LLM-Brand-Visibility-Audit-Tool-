@@ -1,0 +1,35 @@
+{
+  "brand": "Acme AI",
+  "aliases": ["Acme", "AcmeAI"],
+  "brand_domain": "acme.ai",
+  "competitors": ["Beta AI", "Gamma AI"],
+  "industry": "Customer Support AI",
+  "topics": ["automation", "pricing"],
+  "prompts": [
+    {
+      "text": "What are the best tools for customer support automation?",
+      "topic": "automation",
+      "intent": "discovery"
+    },
+    {
+      "text": "Compare the leading platforms in customer support AI.",
+      "topic": "automation",
+      "intent": "comparison"
+    },
+    {
+      "text": "How much do enterprise customer support AI tools typically cost?",
+      "topic": "pricing",
+      "intent": "category"
+    }
+  ],
+  "providers": [
+    {
+      "provider": "openai",
+      "model": "gpt-4o-mini"
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-1.5-flash"
+    }
+  ]
+}

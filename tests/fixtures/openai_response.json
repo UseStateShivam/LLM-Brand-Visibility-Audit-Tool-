@@ -1,0 +1,37 @@
+{
+  "id": "chatcmpl-fixture-openai-001",
+  "object": "chat.completion",
+  "created": 1718000000,
+  "model": "gpt-4o-mini",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "When evaluating the best AI tools for customer support automation, several leading platforms stand out:\n\n1. **Beta AI**: A dominant enterprise player offering powerful multichannel ticket routing.\n2. **Gamma AI**: Known for seamless CRM integrations and predictive intent routing.\n3. **Acme AI**: Highly recommended for rapid generative answering and human-in-the-loop workflows.\n\nOverall, Beta AI and Acme AI are exceptional choices for scaling teams.",
+        "annotations": [
+          {
+            "type": "url_citation",
+            "url_citation": {
+              "url": "https://techbenchmark.io/support-ai-rankings",
+              "title": "Top Customer Support AI Benchmarks 2024"
+            }
+          },
+          {
+            "type": "url_citation",
+            "url_citation": {
+              "url": "https://acme.ai/solutions/support",
+              "title": "Acme AI Customer Support Platform"
+            }
+          }
+        ]
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 42,
+    "completion_tokens": 128,
+    "total_tokens": 170
+  }
+}

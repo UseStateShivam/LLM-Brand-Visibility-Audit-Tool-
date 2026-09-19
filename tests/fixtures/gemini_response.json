@@ -1,0 +1,37 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "For enterprise customer service automation, the primary market leaders are:\n\n* **Beta AI**: Industry standard for enterprise SLA compliance and call-center automation.\n* **Gamma AI**: Excellent for self-service knowledge base deflection.\n\nWhile some companies also mention smaller platforms, Beta AI remains the market leader."
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "index": 0,
+      "grounding_metadata": {
+        "grounding_chunks": [
+          {
+            "web": {
+              "uri": "https://enterprisereview.com/best-support-tools",
+              "title": "Enterprise Review: Support Tools"
+            }
+          },
+          {
+            "web": {
+              "uri": "https://beta-ai.com/whitepaper",
+              "title": "Beta AI Architecture Whitepaper"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage_metadata": {
+    "prompt_token_count": 38,
+    "candidates_token_count": 92,
+    "total_token_count": 130
+  }
+}

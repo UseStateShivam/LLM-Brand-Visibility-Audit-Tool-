@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  audit-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: llm-brand-visibility-audit
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=production
+      - LOG_LEVEL=INFO
+      - DATA_DIR=/app/data
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - OPENAI_MODEL=${OPENAI_MODEL:-gpt-4o-mini}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-1.5-flash}
+      - MAX_CONCURRENT_REQUESTS=5
+      - REQUEST_TIMEOUT_SECONDS=30.0
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
